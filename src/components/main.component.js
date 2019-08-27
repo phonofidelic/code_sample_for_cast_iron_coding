@@ -1,19 +1,6 @@
 import Component from '../lib/Component';
 import section from './section.component';
-
-// const strings = {
-//   title: 'Hello World!'
-// };
-
-// const template = `<p>${strings.title}</p>`;
-
-// const main = new Component({
-//   elementName: 'div',
-//   className: 'main',
-//   content: section
-// });
-
-// export default main;
+import featuresContainer from './featureContainer.component';
 
 const features = [
   {
@@ -40,6 +27,6 @@ export default () => {
   const main = document.createElement('main');
   main.className = 'main';
   main.innerHTML = `<p>main</p>`;
-  main.appendChild(section(features));
+  main.appendChild(section(featuresContainer(features)));
   return main;
 };
