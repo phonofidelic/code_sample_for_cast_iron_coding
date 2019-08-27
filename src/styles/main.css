@@ -26,21 +26,6 @@ body {
   height: 100vh;
   padding: 10px;
 }
-.hello {
-  background-image: url('../../assets/hello.png');
-  background-position: 10vw 5vh;
-  mix-blend-mode: hard-light;
-}
-.cast {
-  background-image: url('../../assets/cast.png');
-  background-position: center;
-  mix-blend-mode: lighten;
-}
-.iron {
-  background-image: url('../../assets/iron.png');
-  background-position: 40vw 70vh;
-  mix-blend-mode: lighten;
-}
 .hello,
 .cast,
 .iron {
@@ -58,13 +43,30 @@ body {
   transform: rotate(-5deg);
   background-size: 50%;
 }
+.hello {
+  background-image: url('../../assets/hello.png');
+  background-position: 10vw 5vh;
+  mix-blend-mode: hard-light;
+  background-size: 25%;
+}
+.cast {
+  background-image: url('../../assets/cast.png');
+  background-position: center;
+  mix-blend-mode: lighten;
+}
+.iron {
+  background-image: url('../../assets/iron.png');
+  background-position: 40vw 70vh;
+  mix-blend-mode: lighten;
+}
 
 .main {
-  border: 1px solid #6c8ebf;
-  background-color: #dae8fc;
+  /* border: 1px solid #6c8ebf;
+  background-color: #dae8fc; */
   /* background-color: rgba(255, 255, 255, 0.452); */
-  height: 1500px;
-  padding: 10px;
+  /* height: 1500px; */
+  padding: 100px 10px;
+  /* padding-top: 100px; */
 }
 
 .nav {
@@ -83,8 +85,8 @@ body {
 }
 
 .section {
-  border: 1px solid #d6b656;
-  background-color: #fff2cc;
+  /* border: 1px solid #d6b656;
+  background-color: #fff2cc; */
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -112,6 +114,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .hello {
+    background-size: 50%;
+  }
   .features-container {
     flex-direction: column;
   }
