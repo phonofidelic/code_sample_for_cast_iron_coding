@@ -8,7 +8,7 @@ export default (title, content) => {
   sectionTitle.innerText = title;
 
   section.appendChild(sectionTitle);
-  section.appendChild(content);
+  if (content) section.appendChild(content);
 
   return section;
 };
