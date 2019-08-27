@@ -27,6 +27,6 @@ export default () => {
   const main = document.createElement('main');
   main.className = 'main';
   main.innerHTML = `<p>main</p>`;
-  main.appendChild(section(featuresContainer(features)));
+  main.appendChild(section('Projects', featuresContainer(features)));
   return main;
 };

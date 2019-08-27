@@ -58,7 +58,7 @@ body {
 .main {
   border: 1px solid #6c8ebf;
   background-color: #dae8fc;
-  background-color: rgba(255, 255, 255, 0.452);
+  /* background-color: rgba(255, 255, 255, 0.452); */
   height: 1500px;
   padding: 10px;
 }
