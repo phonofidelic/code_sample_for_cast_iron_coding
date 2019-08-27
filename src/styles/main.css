@@ -14,8 +14,6 @@ body {
 }
 
 .landing {
-  /* border: 1px solid #9673a6;
-  background-color: #e1d5e7; */
   background-image: url('../../assets/background.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -23,72 +21,38 @@ body {
   background-size: cover;
   height: 100vh;
   padding: 10px;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; */
 }
-
 .hello {
   background-image: url('../../assets/hello.png');
-  background-repeat: no-repeat;
-  background-position: 10vw 10vh;
-  /* background-attachment: fixed; */
-  /* background-size: 10%; */
-  height: 100vh;
-  padding: 10px;
-  /* background-position: top 10vh; */
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-position: 10vw 5vh;
   mix-blend-mode: hard-light;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
 }
 .cast {
   background-image: url('../../assets/cast.png');
-  background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
-  /* background-size: 10%; */
-  height: 100vh;
-  padding: 10px;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   mix-blend-mode: lighten;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
 }
 .iron {
   background-image: url('../../assets/iron.png');
+  background-position: 40vw 70vh;
+  mix-blend-mode: lighten;
+}
+.hello,
+.cast,
+.iron {
   background-repeat: no-repeat;
-  background-position: 40vw 60vh;
-  /* background-attachment: fixed; */
-  /* background-size: 10%; */
   height: 100vh;
-  padding: 10px;
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  mix-blend-mode: lighten;
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   transform: rotate(-5deg);
+  background-size: 50%;
 }
 
 .main {
