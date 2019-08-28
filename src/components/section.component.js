@@ -1,6 +1,7 @@
-export default (title, content) => {
+export default ({ id, title, content }) => {
   const section = document.createElement('div');
   section.className = 'section';
+  section.id = id;
   // section.innerHTML = `<p>Section</p>`;
 
   const sectionTitle = document.createElement('h2');
@@ -8,7 +9,11 @@ export default (title, content) => {
   sectionTitle.innerText = title;
 
   section.appendChild(sectionTitle);
-  if (content) section.appendChild(content);
+  if (content.length) {
+    content.forEach(contentElement => {
+      section.appendChild(contentElement);
+    });
+  }
 
   return section;
 };
