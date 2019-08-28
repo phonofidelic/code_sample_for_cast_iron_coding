@@ -1,4 +1,4 @@
-import navButton from './navButton.component';
+import navButton from './navButton';
 
 export default () => {
   const nav = document.createElement('nav');

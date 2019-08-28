@@ -1,7 +1,7 @@
-import landing from './components/landing.component';
-import nav from './components/nav.component';
-import main from './components/main.component';
-import footer from './components/footer.component';
+import landing from './components/landing';
+import nav from './components/nav';
+import main from './components/main';
+import footer from './components/footer';
 import 'normalize.css';
 import './styles/main.css';
 
