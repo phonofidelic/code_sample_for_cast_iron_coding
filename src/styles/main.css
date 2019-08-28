@@ -97,9 +97,11 @@ a:hover {
 }
 
 .footer {
-  border: 1px solid #b85450;
+  /* border: 1px solid #b85450;
   background-color: #f8cecc;
-  padding: 10px;
+   */
+  border-top: solid 1px #2b2b2b;
+  padding: 10px 30px;
 }
 
 .section {
@@ -143,10 +145,12 @@ a:hover {
   background-size: 100%;
   opacity: 0.5;
   position: relative;
+  transition: opacity 0.3s;
 }
 .feature:hover {
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .feature-title {
