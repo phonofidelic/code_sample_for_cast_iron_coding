@@ -14,7 +14,7 @@ export default ({ id, title, description, image, github, demo }) => {
   featureFocus.addEventListener('click', e => e.stopPropagation());
 
   const topBar = document.createElement('div');
-  topBar.className = 'feature-focus-action-bar';
+  topBar.classList.add('feature-focus-action-bar', 'top');
 
   const closeButton = document.createElement('div');
   closeButton.className = 'feature-focus-button';
@@ -44,7 +44,7 @@ export default ({ id, title, description, image, github, demo }) => {
   featureFocus.appendChild(featureDescription);
 
   const bottomBar = document.createElement('div');
-  bottomBar.className = 'feature-focus-action-bar';
+  bottomBar.classList.add('feature-focus-action-bar', 'bottom');
   bottomBar.appendChild(
     navButton({ title: 'GitHub', link: github, target: 'blank' })
   );
