@@ -52,6 +52,37 @@ const introText = document.createElement('p');
 introText.className = 'intro-text';
 introText.innerText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`;
 
+const contactText = document.createElement('p');
+contactText.className = 'contact-text';
+contactText.innerText =
+  'I would love to hear from you with anny comments or feedback you may have!';
+
+const socialIcons = [
+  {
+    className: 'fa-github',
+    link: 'https://github.com/phonofidelic'
+  },
+  {
+    className: 'fa-linkedin',
+    link: 'https://www.linkedin.com/in/christopher-clemons-89182aba'
+  }
+];
+const socialLinks = document.createElement('div');
+socialLinks.className = 'social-links';
+socialIcons.forEach(icon => {
+  const iconElement = document.createElement('i');
+  iconElement.classList.add('fab');
+  iconElement.classList.add(icon.className);
+
+  const linkElement = document.createElement('a');
+  linkElement.setAttribute('href', icon.link);
+  linkElement.setAttribute('target', 'blank');
+  linkElement.appendChild(iconElement);
+
+  socialLinks.appendChild(linkElement);
+});
+// socialLinks.innerHTML = '<i class="fab fa-github"></i>';
+
 export default () => {
   const main = document.createElement('main');
   main.className = 'main';
@@ -68,6 +99,12 @@ export default () => {
     })
   );
 
-  main.appendChild(section({ id: 'contact', title: 'Contact' }));
+  main.appendChild(
+    section({
+      id: 'contact',
+      title: 'Contact',
+      content: [contactText, socialLinks]
+    })
+  );
   return main;
 };
