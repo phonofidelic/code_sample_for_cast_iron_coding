@@ -57,12 +57,16 @@ const features = [
   // }
 ];
 
-const introText = document.createElement('p');
-introText.className = 'intro-text';
-introText.innerText = `This project is intended as a code sample for an application to Cast Iron Coding. I would like to demonstrate the creation of a static web site, from design and wireframing to the final code implementation, using plain Javascript, HTML, and CSS. Most of the projects on my GitHub use React as a front-end framework, so I am hoping that this project can show that I have a grasp on working with DOM manipulation without the use of such libraries and frameworks.`;
+const aboutText = document.createElement('p');
+aboutText.className = 'intro-text';
+aboutText.innerText = `This project is intended as a code sample for an application to Cast Iron Coding. I would like to demonstrate the creation of a static web site, from design and wireframing to the final code implementation, using plain Javascript, HTML, and CSS. Most of the projects on my GitHub use React as a front-end framework, so I am hoping that this project can show that I have a grasp on working with DOM manipulation without the use of such libraries and frameworks.`;
+
+const projectsText = document.createElement('p');
+projectsText.classList.add('intro-text', 'centered');
+projectsText.innerText = 'Here are some projects I am currently working on.';
 
 const contactText = document.createElement('p');
-contactText.className = 'contact-text';
+contactText.classList.add('intro-text', 'centered');
 contactText.innerText =
   'I would love to hear from you with anny comments or feedback you may have!';
 
@@ -97,14 +101,18 @@ export default () => {
   main.className = 'main';
   // main.innerHTML = `<p>main</p>`;
   main.appendChild(
-    section({ id: 'about', title: 'About', content: [introText] })
+    section({ id: 'about', title: 'About', content: [aboutText] })
   );
 
   main.appendChild(
     section({
       id: 'projects',
       title: 'Projects',
-      content: [featuresContainer(features), featureFocusContainer(features)]
+      content: [
+        projectsText,
+        featuresContainer(features),
+        featureFocusContainer(features)
+      ]
     })
   );
 
