@@ -9,7 +9,7 @@ export default ({ id, title, content }) => {
   sectionTitle.innerText = title;
 
   section.appendChild(sectionTitle);
-  if (content.length) {
+  if (content) {
     content.forEach(contentElement => {
       section.appendChild(contentElement);
     });

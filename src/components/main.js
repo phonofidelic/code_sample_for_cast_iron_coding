@@ -59,6 +59,7 @@ export default () => {
   main.appendChild(
     section({ id: 'about', title: 'About', content: [introText] })
   );
+
   main.appendChild(
     section({
       id: 'projects',
@@ -66,5 +67,7 @@ export default () => {
       content: [featuresContainer(features), featureFocusContainer(features)]
     })
   );
+
+  main.appendChild(section({ id: 'contact', title: 'Contact' }));
   return main;
 };
