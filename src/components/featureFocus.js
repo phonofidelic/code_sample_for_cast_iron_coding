@@ -1,6 +1,6 @@
 import navButton from './navButton';
 
-export default ({ id, title, description, image, github }) => {
+export default ({ id, title, description, image, github, demo }) => {
   const container = document.createElement('div');
   container.id = id;
   container.className = 'feature-focus-modal';
@@ -45,7 +45,14 @@ export default ({ id, title, description, image, github }) => {
 
   const bottomBar = document.createElement('div');
   bottomBar.className = 'feature-focus-action-bar';
-  bottomBar.appendChild(navButton({ title: 'GitHub', link: github }));
+  bottomBar.appendChild(
+    navButton({ title: 'GitHub', link: github, target: 'blank' })
+  );
+  if (demo) {
+    bottomBar.appendChild(
+      navButton({ title: 'Demo', link: demo, target: 'blank' })
+    );
+  }
   featureFocus.appendChild(bottomBar);
 
   container.appendChild(featureFocus);

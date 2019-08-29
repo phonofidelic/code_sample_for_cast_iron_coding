@@ -225,7 +225,13 @@ body {
 i.fab {
   font-size: 2.5em;
   color: #2b2b2b;
-  margin: 10px;
+  margin: 20px;
+  transition: color 0.3s;
+}
+
+i.fab:hover {
+  color: #7c7c7c;
+  transition: color 0.3s;
 }
 
 /****************** Footer ******************/
