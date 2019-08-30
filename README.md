@@ -14,6 +14,6 @@ I am quite  happy with how the site looks and feels, but there are a few things 
 ## Development
 To get started with development on this project, run the following commands:
 
-1. ```git clone https://github.com/phonofidelic/code_sample_for_cast_iron_coding.git && cd code_sample_for_cast_iron_coding && yarn```
-2. ```yarn install```
+1. ```git clone https://github.com/phonofidelic/code_sample_for_cast_iron_coding.git && cd code_sample_for_cast_iron_coding```
+2. ```yarn```
 3. ```yarn start```
